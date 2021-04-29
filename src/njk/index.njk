@@ -6,25 +6,31 @@
 
 {% block content %}
 <div class="container">
-  <h1>Main headline here</h1>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in facilisis velit, aliquam congue dui. Mauris id mi quam. Nam enim leo, bibendum vel efficitur id, elementum malesuada est. Pellentesque interdum tempus eros nec iaculis. Quisque ac est dictum, vehicula nulla quis, condimentum dui.</p>
-  <h2>Library books loop</h2>
-  <p>This loops through data that came from a Google Docs example.</p>
   <div class="row">
-    {% for book in library.books %}
-      <div class="col">
-        <img src="img/{{ book.slug }}.jpg" alt="" class="img-fluid">
-        <h3><a href="books/{{ book.slug }}.html">{{ book.title }}</a></h3>
-      </div>
-    {% endfor %}
+    <div class="col-md-8 offset-md-2">
+      <h1>About Queen</h1>
+      <p>Hempen halter mizzenmast deadlights gaff pillage starboard jack lee Blimey draught. Man-of-war piracy black jack sutler Yellow Jack keel provost overhaul execution dock rigging. Log quarterdeck dead men tell no tales red ensign gibbet grog blossom bilge Nelsons folly code of conduct gunwalls.</p>
+
+      <h2>Meet the Members</h2>
+      
+          <h3 class="blog-headline"> <a href="members/roger-taylor.html">Roger Taylor</a></h3>
+          <p class="blog-date">Drummer</p>
+          <img class="img-fluid" src="./img/roger-taylor-bw.jpg" alt="">
+          
+        
+          <h3 class="blog-headline"> <a href="members/brian-may.html">Brian May</a></h3>
+          <p class="blog-date">Guitarist</p>
+          <img class="img-fluid" src="img/brian-may-bw.jpg" alt="">
+        
+          <h3 class="blog-headline"> <a href="members/john-deacon.html">John Deacon</a></h3>
+          <p class="blog-date">Bass guitarist</p>
+          <img class="img-fluid" src="img/john-deacon-bw.jpg" alt="">
+
+          <h3 class="blog-headline"> <a href="members/freddie-mercury.html">Freddie Mercury</a></h3>
+          <p class="blog-date">Pianist</p>
+          <img class="img-fluid" src="img/freddie-mercury-bw.jpg" alt="">
+    </div>
   </div>
-  <h2>Bookstores loop</h2>
-  <p>This loops through data that came from a Google Sheet example.</p>
-  <hr>
-  {% for store in bookstores.stores %}
-    <h3><a href="{{ store.url }}" target="_blank">{{ store.name }}</a></h3>
-    <p>{{ store.address}}, {{ store.city }}, {{ store.state }} {{ store.zip }}</p>
-    <hr>
-  {% endfor %}
+</div>
 </div>
 {% endblock %}

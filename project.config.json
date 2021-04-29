@@ -10,6 +10,13 @@
       "type": "sheet",
       "name": "bookstores"
     }
+    ,
+    {
+      "fileId": "1hrPpetFhCHSH8yjb916-KumevOaw28g6ck__asTfca0",
+      "type": "sheet",
+      "name": "queen"
+    }
+
   ],
   "to_bake": [
     {
@@ -18,6 +25,13 @@
       "array": "books",
       "slug": "slug",
       "path": "books"
+    },
+    {
+      "template": "bake-blog",
+      "data": "queen",
+      "array": "members",
+      "slug": "slug",
+      "path": "members"
     }
   ]
 }
