@@ -21,7 +21,41 @@
 // Import partials
 @import "nav";
 @import "jumbotron";
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+
 
 h3 {
   font-size: 1.5rem;
+  font-family: Arvo, 'Times New Roman', Times, serif;
+  color: red;
+}
+
+p {
+  font-family: Kalam, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+
+
+
+// #background {
+//   background-color: blue;
+// }
+body {
+  background-color: 	#9e3168;
+}
+#q {
+  color:blue;
+  font-family: courier;
+}
+#pic {
+  size: 10px;
+}
+
+.img-fluid {
+  width: 350px;
+  height: 350px;
+}
+
+.card {
+  background-color: green;
 }
